@@ -10,14 +10,16 @@ public class Imovel implements Seguravel {
         this.areaConstruida = areaConstruida;
     }
 
-    public boolean obterDescricao() {
+    public void obterDescricao() {
         System.out.println("Imovel com area contruida de " + this.areaConstruida + "m2 e valor de mercado " + this.valorDoImovel);
-        return false;
     }
 
-    public double calcularValorDaApolice() {
+    @Override
+    public double calcularValorApolice() {
         double valorApolice = this.valorDoImovel * 0.004;
         valorApolice = valorApolice + (areaConstruida * 0.3);
         return valorApolice;
     }
+
+
 }

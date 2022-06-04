@@ -12,11 +12,14 @@ public class Carro implements Seguravel {
         this.modelo = modelo;
     }
 
-    public String obterDescricao() {
+
+
+    public void obterDescricao() {
         System.out.println("Modelo: " + this.modelo);
         System.out.println("Ano de Fabricacao: " + this.anoDeFabricacao);
         System.out.println("Valor do Modelo: " + this.valorDoModelo);
     }
+
 
     public double calcularValorApolice() {
         double valorApolice = this.valorDoModelo * 0.05;
