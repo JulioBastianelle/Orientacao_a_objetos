@@ -22,9 +22,13 @@ No método main(), instanciamos uma corretora de seguros, um carro e um imóvel,
  */
 
 public class Principal {
-    CorretoraSeguros corretora = new CorretoraSeguros();
-    Carro meuCarro = new Carro();
-    Imovel minhaCasa = new Imovel();
+
+    public static void main(String[] args) {
+        CorretoraSeguros corretora = new CorretoraSeguros();
+        Carro meuCarro = new Carro(2012,45000,"Polo");
+        Imovel minhaCasa = new Imovel(1000000,100000);
         corretora.fazerPropostaSeguro(meuCarro);
         corretora.fazerPropostaSeguro(minhaCasa);
+    }
+
 }
